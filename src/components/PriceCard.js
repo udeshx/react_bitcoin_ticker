@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PriceCard = (props) => {
-    const value = typeof parseInt(props.value) === 'number' && !isNaN(parseInt(props.value)) ? Math.round(parseInt(props.value)) : props.value;
+    const value = typeof parseInt(props.value) === 'number' && !isNaN(parseInt(props.value)) ? parseInt(props.value).toFixed(2) : props.value;
     return (
         <div className="card mr-0 custom-card">
             <div className="card-body">
